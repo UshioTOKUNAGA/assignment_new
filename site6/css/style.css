@@ -1,0 +1,77 @@
+/*-------------------------------------------
+共通のレイアウト
+-------------------------------------------*/
+img{
+    max-width: 100%;
+}
+
+.mainVis__img{
+    width: 90%;
+    height: auto;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+.header{
+    display: flex;
+}
+.navList{
+    display: flex;
+}
+.header__img{
+    width: 180px;
+    height: auto;
+}
+
+/*-------------------------------------------
+section concept
+-------------------------------------------*/
+.concept{
+    display: flex;
+    justify-content: center;
+}
+.concept__img{
+    width: 500px;
+    height: auto;
+}
+.concept__desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.concept__ttl{
+    font-size: 25px;
+}
+.concept__ttlIOW{
+    font-size: 14px;
+}
+.concept__txt{
+    font-size: 17px;
+}
+
+/*-------------------------------------------
+section work
+-------------------------------------------*/
+.work{
+    display: flex;
+    justify-content: center;
+}
+.work__desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.work__ttl{
+    font-size: 25px;
+}
+.work__ttlIOW{
+    font-size: 14px;
+}
+.work__txt{
+    font-size: 17px;
+}
+.work__img{
+    width: 500px;
+    height: auto;
+}
