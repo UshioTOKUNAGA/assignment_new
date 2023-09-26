@@ -4,12 +4,23 @@
 img{
     max-width: 100%;
 }
+.siteWrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.innerWrap{
+    width: 60%;
+    margin: 0 auto;
+}
 
 /*-------------------------------------------
 mainVis
 -------------------------------------------*/
+.mainVis{
+    margin-top: 60px;
+}
 .mainVis__img{
-    width: 90%;
+    width: 90vw;
     height: auto;
 }
 
@@ -18,12 +29,18 @@ mainVis
 -------------------------------------------*/
 .header{
     display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
 }
 .navList{
     display: flex;
+    margin-left: 60px;
+}
+.navListItem:not(:first-child){
+    margin-left: 40px;
 }
 .header__img{
-    width: 180px;
+    width: 150px;
     height: auto;
 }
 
@@ -32,7 +49,11 @@ section concept
 -------------------------------------------*/
 .concept{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.concept__imgSide{
+    width: 48%;
 }
 .concept__img{
     width: 500px;
@@ -42,15 +63,23 @@ section concept
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 48%;
 }
 .concept__ttl{
     font-size: 25px;
 }
 .concept__ttlIOW{
     font-size: 14px;
+    margin-top: 10px;
 }
 .concept__txt{
     font-size: 17px;
+}
+.concept__txt:not(:last-of-type){
+    margin-top: 40px;
+}
+.concept__txt:last-child{
+    margin-top: 10px;
 }
 
 /*-------------------------------------------
@@ -58,21 +87,34 @@ section work
 -------------------------------------------*/
 .work{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 60px;
 }
 .work__desc{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 48%;
 }
 .work__ttl{
     font-size: 25px;
 }
 .work__ttlIOW{
     font-size: 14px;
+    margin-top: 10px;
 }
 .work__txt{
     font-size: 17px;
+    /* margin-top: 40px; */
+}
+.work__txt:not(:last-child){
+    margin-top: 40px;
+}
+.work__txt:last-child{
+    margin-top: 10px;
+}
+.work__imgSide{
+    width: 48%;
 }
 .work__img{
     width: 500px;
@@ -85,4 +127,6 @@ section work
 .footer{
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
