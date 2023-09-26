@@ -5,6 +5,9 @@ img{
     max-width: 100%;
 }
 
+/*-------------------------------------------
+mainVis
+-------------------------------------------*/
 .mainVis__img{
     width: 90%;
     height: auto;
@@ -74,4 +77,12 @@ section work
 .work__img{
     width: 500px;
     height: auto;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+.footer{
+    display: flex;
+    justify-content: space-between;
 }
