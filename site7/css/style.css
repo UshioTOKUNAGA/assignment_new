@@ -1,0 +1,27 @@
+/*-------------------------------------------
+共通
+-------------------------------------------*/
+.siteWrap{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.header__nav{
+    display: flex;
+}
+.header__navItem:not(:first-child){
+    margin-left: 30px;
+}
+.header__instaIcon{
+    width: 20px;
+    height: auto;
+}
