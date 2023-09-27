@@ -33,3 +33,26 @@
     width: 100%;
     margin-top: 100px;
 }
+
+/*-------------------------------------------
+セクション／about
+-------------------------------------------*/
+.about{
+    margin-top: 100px;
+}
+.about__head{
+    font-size: 30px;
+    text-align: center;
+}
+.about__name{
+    margin-top: 100px;
+}
+.about__info{
+    margin-top: 40px;
+}
+.about__infoItem:not(:first-child){
+    margin-top: 5px;
+}
+.about__profTxt{
+    margin-top: 40px;
+}
