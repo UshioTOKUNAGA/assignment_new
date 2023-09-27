@@ -1,6 +1,10 @@
 /*-------------------------------------------
 共通のレイアウト
 -------------------------------------------*/
+/* html{
+    font-size: 62.5%;
+} */
+
 img{
     max-width: 100%;
 }
@@ -11,6 +15,11 @@ img{
 .innerWrap{
     width: 60%;
     margin: 0 auto;
+}
+@media screen and (max-width: 940px){
+    .innerWrap{
+        width: 90%;
+    }
 }
 
 /*-------------------------------------------
@@ -32,6 +41,11 @@ mainVis
     justify-content: flex-start;
     margin-top: 30px;
 }
+@media screen and (max-width: 635px){
+    .header{
+        align-items: center;
+    }
+}
 .navList{
     display: flex;
     margin-left: 60px;
@@ -39,9 +53,19 @@ mainVis
 .navListItem:not(:first-child){
     margin-left: 40px;
 }
+@media screen and (max-width: 635px){
+    .navListItem{
+        font-size: 5px;
+    }
+}
 .header__img{
-    width: 150px;
+    width: 10vw;
     height: auto;
+}
+@media screen and (max-width: 635px){
+    .header__img{
+        width: 30vw;
+    }
 }
 
 /*-------------------------------------------
@@ -52,8 +76,19 @@ section concept
     justify-content: space-between;
     margin-top: 60px;
 }
+@media screen and (max-width: 635px){
+    .concept{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 .concept__imgSide{
     width: 48%;
+}
+@media screen and (max-width: 635px){
+    .concept__imgSide{
+        width: 90%;
+    }
 }
 .concept__img{
     width: 500px;
@@ -65,8 +100,18 @@ section concept
     justify-content: center;
     width: 48%;
 }
+@media screen and (max-width: 635px){
+    .concept__desc{
+        width: 90%;
+    }
+}
 .concept__ttl{
     font-size: 25px;
+}
+@media screen and (max-width: 635px){
+    .concept__ttl{
+        margin-top: 10px;
+    }
 }
 .concept__ttlIOW{
     font-size: 14px;
@@ -90,14 +135,30 @@ section work
     justify-content: space-between;
     margin-top: 60px;
 }
+@media screen and (max-width: 635px){
+    .work{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}
 .work__desc{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 48%;
 }
+@media screen and (max-width: 635px){
+    .work__desc{
+        width: 90%;
+    }
+}
 .work__ttl{
     font-size: 25px;
+}
+@media screen and (max-width: 635px){
+    .work__ttl{
+        margin-top: 10px;
+    }
 }
 .work__ttlIOW{
     font-size: 14px;
@@ -116,6 +177,11 @@ section work
 .work__imgSide{
     width: 48%;
 }
+@media screen and (max-width: 635px){
+    .work__imgSide{
+        width: 90%;
+    }
+}
 .work__img{
     width: 500px;
     height: auto;
@@ -129,4 +195,10 @@ section work
     justify-content: space-between;
     margin-top: 100px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 635px){
+    .footer{
+        align-items: center;
+    }
 }
