@@ -81,3 +81,31 @@
     width: 100%;
     height: auto;
 }
+
+/*-------------------------------------------
+セクション／works
+-------------------------------------------*/
+.news{
+    margin-top: 150px;
+}
+.news__head{
+    font-size: 30px;
+    text-align: center;
+}
+.news__info{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #c8c8c8;
+    margin-top: 100px;
+    /* row-gap: 5px; */
+}
+.news__infoItem{
+    width: 25%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+}
+.news__infoItemDesc{
+    width: 75%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+}
