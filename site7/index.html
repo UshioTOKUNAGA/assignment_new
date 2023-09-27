@@ -10,23 +10,19 @@
 <body>
     <div class="siteWrap">
         <header class="header">
-            <div>
-                <h1>
-                    <img src="/site7/img/logo.svg" alt="My Work" class="header__logo" width="120" height="36">
-                </h1>
-            </div>
-    
-            <div>
-                <nav>
-                    <ul class="header__nav">
-                        <li class="header__navItem"><a href="">About</a></li>
-                        <li class="header__navItem"><a href="">Works</a></li>
-                        <li class="header__navItem"><a href="">News</a></li>
-                        <li class="header__navItem"><a href="">Contact</a></li>
-                        <li class="header__navItem"><a href=""><img src="/site7/img/icon-instagram.png" alt="" class="header__instaIcon" width="504" height="504"></a></li>
-                    </ul>
-                </nav>
-            </div>
+            <h1>
+                <img src="/site7/img/logo.svg" alt="My Work" class="header__logo" width="120" height="36">
+            </h1>
+
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__navItem"><a href="">About</a></li>
+                    <li class="header__navItem"><a href="">Works</a></li>
+                    <li class="header__navItem"><a href="">News</a></li>
+                    <li class="header__navItem"><a href="">Contact</a></li>
+                    <li class="header__navItem"><a href=""><img src="/site7/img/icon-instagram.png" alt="" class="header__instaIcon" width="504" height="504"></a></li>
+                </ul>
+            </nav>
         </header>
     </div>
 
@@ -82,6 +78,7 @@
                 <h2 class="contact__head">Contact</h2>
                 <form action="">
                     <dl class="contact__form">
+                        <!-- ddとdtが逆 -->
                         <dd class="contact__formItem"><label for="name">NAME</label></dd>
                         <dt class="contact__formInput"><input type="text"></dt>
                         <dd class="contact__formItem"><label for="email">E-mail</label></dd>
@@ -98,7 +95,8 @@
     </main>
 
     <footer class="footer">
-        <small><p>© 2020 My Work</p></small>
+        <!-- 覚える -->
+        <p><small>© 2020 My Work</small></p>
     </footer>
 </body>
 </html>

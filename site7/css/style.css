@@ -1,11 +1,16 @@
 /*-------------------------------------------
 共通
 -------------------------------------------*/
+/* 装飾は基本的にCSS */
+/* コンテンツ幅の取り方 */
 img{
     max-width: 100%;
 }
+/* 修正 */
 .siteWrap{
     width: 60%;
+    /* コンテンツはばは固定値 */
+    /* 基準の幅を設けて、 */
     margin: 0 auto;
 }
 @media screen and (max-width: 850px){
@@ -125,7 +130,8 @@ img{
     }
 }
 .works__imgsItem{
-    width: calc(95%/3);
+    width: calc((100% - 40px) / 3);
+    /* calc((100% - 余白二つ合わせた数値) / 3); */
 }
 @media screen and (max-width: 850px){
     .works__imgsItem{
@@ -166,6 +172,7 @@ img{
 }
 .news__infoItem{
     width: 25%;
+    /* 基準となるものは固定で書く場合もある（結構多い） */
     border-bottom: solid 1px #c8c8c8;
     padding: 15px;
 }
@@ -215,6 +222,7 @@ img{
 }
 .contact__formItem{
     width: 15%;
+    /* 幅の取り方 */
 }
 .contact__formInput{
     width: 85%;
