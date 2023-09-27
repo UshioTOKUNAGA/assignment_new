@@ -56,3 +56,28 @@
 .about__profTxt{
     margin-top: 40px;
 }
+
+/*-------------------------------------------
+セクション／works
+-------------------------------------------*/
+.works{
+    margin-top: 150px;
+}
+.works__head{
+    font-size: 30px;
+    text-align: center;
+}
+.works__imgs{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.works__imgsItem{
+    width: calc(95%/3);
+}
+.works__img{
+    width: 100%;
+    height: auto;
+}
