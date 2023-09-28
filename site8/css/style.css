@@ -160,3 +160,42 @@ header{
 .catalog__txt:not(:first-of-type){
     margin-top: 40px;
 }
+
+/*-------------------------------------------
+セクション ／　antique
+-------------------------------------------*/
+.antique{
+    margin-top: 100px;
+
+    background-color: #f4f1f1;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.antique__imgSide{
+    width: 580px;
+}
+.antique__img{
+    width: 580px;
+    height: 580px;
+}
+
+.antique__txtSide{
+    width: 580px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.antique__head{
+    font-size: 22px;
+    font-weight: bold;
+}
+.antique__txt:first-of-type{
+    margin-top: 60px;
+}
+.antique__txt:not(:first-of-type){
+    margin-top: 40px;
+}
