@@ -1,0 +1,87 @@
+/*-------------------------------------------
+共通
+-------------------------------------------*/
+img{
+    max-width: 100%;
+}
+.secWrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+header{
+    height: 300px;
+    background-image: url(../img/header_background.jpeg);
+    background-size: 1200px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/*-------------------------------------------
+セクション ／　article 
+-------------------------------------------*/
+.article{
+    margin-top: 100px;
+}
+.article__head{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.article__headTxt{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.article__conts{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.article__archive{
+    /* リンクを要素の高さいっぱいに広げるため */
+    display: flex;
+}
+.article__archiveLink{
+    position: relative;
+}
+.article__archiveImg{
+    width: 590px;
+    height: 590px;
+}
+.article__archiveHead{
+    font-size: 22px;
+}
+.article__archiveTxts{
+    background-color: #605f5f;
+    color: #fff;
+    width: 300px;
+    position: absolute;
+    bottom: 255px;
+    left: 140px;
+}
+
+.article__new{
+    display: flex;
+}
+.article__newLink{
+    position: relative;
+}
+.article__newImg{
+    width: 590px;
+    height: 590px;
+}
+.article__newHead{
+    font-size: 22px;
+}
+.article__newTxts{
+    background-color: #605f5f;
+    color: #fff;
+    width: 300px;
+    position: absolute;
+    bottom: 255px;
+    left: 140px;
+}
