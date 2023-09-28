@@ -8,9 +8,14 @@ img{
     width: 1200px;
     margin: 0 auto;
 }
+.innerWrap{
+    width: 900px;
+    margin: 0 auto;
+}
 .silverWrap{
     width: 100%;
-    background-color: #f4f1f1;
+    background-color: #dad3d3;
+    padding: 100px 0;
 }
 
 
@@ -58,8 +63,8 @@ img{
     position: relative;
 }
 .article__archiveImg{
-    width: 590px;
-    height: 590px;
+    width: 440px;
+    height: 440px;
 }
 .article__archiveHead{
     font-size: 22px;
@@ -67,10 +72,12 @@ img{
 .article__archiveTxts{
     background-color: #605f5f;
     color: #fff;
+}
+.article__archiveTxts{
     width: 300px;
     position: absolute;
-    bottom: 255px;
-    left: 140px;
+    bottom: 180px;
+    left: 70px;
 }
 
 .article__new{
@@ -80,8 +87,8 @@ img{
     position: relative;
 }
 .article__newImg{
-    width: 590px;
-    height: 590px;
+    width: 440px;
+    height: 440px;
 }
 .article__newHead{
     font-size: 22px;
@@ -89,10 +96,12 @@ img{
 .article__newTxts{
     background-color: #605f5f;
     color: #fff;
+}
+.article__newTxts{
     width: 300px;
     position: absolute;
-    bottom: 255px;
-    left: 140px;
+    bottom: 180px;
+    left: 70px;
 }
 
 /*-------------------------------------------
@@ -137,23 +146,23 @@ img{
 -------------------------------------------*/
 .catalog{
     margin-top: 100px;
-
-    background-color: #f4f1f1;
-    
+}
+.catalog{
     display: flex;
     justify-content: space-between;
 }
 
 .catalog__imgSide{
-    width: 580px;
+    width: 430px;
 }
 .catalog__img{
-    width: 580px;
-    height: 580px;
+    width: 440px;
+    height: 440px;
 }
 
 .catalog__txtSide{
-    width: 580px;
+    width: 430px;
+    margin-left: 40px;
 
     display: flex;
     flex-direction: column;
@@ -176,23 +185,21 @@ img{
 -------------------------------------------*/
 .antique{
     margin-top: 100px;
-
-    background-color: #f4f1f1;
     
     display: flex;
     justify-content: space-between;
 }
 
 .antique__imgSide{
-    width: 580px;
+    width: 430px;
 }
 .antique__img{
-    width: 580px;
-    height: 580px;
+    width: 430px;
+    height: 430px;
 }
 
 .antique__txtSide{
-    width: 580px;
+    width: 430px;
 
     display: flex;
     flex-direction: column;
