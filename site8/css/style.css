@@ -119,27 +119,31 @@ img{
     background-repeat: no-repeat;
 }
 .fashion__conts{
-    /* text-align: center; */
-
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-
-    /* display: grid;
-    place-items: center; */
-
-    /* position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto; */
-
+    height: 500px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fashion__conts{
+    color: #e30b0b;
 }
 .fashion__head{
     font-size: 22px;
     font-weight: bold;
+}
+.fashion__txt{
+    margin-top: 30px;
+    line-height: 2;
+}
+.fashion__btn{
+    border: solid 3px #e30b0b;
+    padding: 14px 36px;
+    background-color: #dad3d3;
+}
+.fashion__btn{
+    display: inline-block;
+    margin-top: 30px;
 }
 
 /*-------------------------------------------
