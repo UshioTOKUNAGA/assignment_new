@@ -4,7 +4,7 @@
 img{
     max-width: 100%;
 }
-.secWrap{
+.body{
     width: 1200px;
     margin: 0 auto;
 }
@@ -12,6 +12,7 @@ img{
     width: 100%;
     background-color: #f4f1f1;
 }
+
 
 /*-------------------------------------------
 ヘッダー
@@ -23,7 +24,7 @@ img{
 }
 .header{
     background-image: url(../img/header_background.jpeg);
-    /* background-size: 1200px; */
+    background-size: 100%;
     background-position: center top;
     background-repeat: no-repeat;
 }
@@ -99,10 +100,11 @@ img{
 -------------------------------------------*/
 .fashion{
     margin-top: 100px;
-    width: 100%;
+    /* width: 100%; */
 
     height: 500px;
     background-image: url(../img/header_background.jpeg);
+    background-size: 100%;
     background-position: center top;
     background-repeat: no-repeat;
 }
