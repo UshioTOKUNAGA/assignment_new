@@ -13,7 +13,8 @@ img{
     margin: 0 auto;
 }
 .silverWrap{
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
     background-color: #dad3d3;
     padding: 100px 0;
 }
@@ -109,7 +110,7 @@ img{
 -------------------------------------------*/
 .fashion{
     margin-top: 100px;
-    /* width: 100%; */
+    margin-bottom: 100px;
 
     height: 500px;
     background-image: url(../img/header_background.jpeg);
@@ -145,7 +146,7 @@ img{
 セクション ／　catalog
 -------------------------------------------*/
 .catalog{
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 .catalog{
     display: flex;
