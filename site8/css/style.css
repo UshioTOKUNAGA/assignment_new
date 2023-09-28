@@ -207,3 +207,45 @@ img{
 .antique__txt:not(:first-of-type){
     margin-top: 40px;
 }
+
+/*-------------------------------------------
+セクション ／　フッター
+-------------------------------------------*/
+.footer{
+    margin-top: 100px;
+}
+.footerWrap{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footerWrap{
+    background-color: #3d3a3a;
+    color: #fff;
+}
+
+.footer__flexItem{
+    width: 300px;
+    line-height: 1.5;
+}
+.footer__ttl{
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer__txtList{
+    margin-top: 20px;
+}
+.footer__txtListItem::before{
+    content: '-';
+    margin-right: 5px;
+}
+.footer__txts{
+    margin-top: 20px;
+}
+
+.footer__copyRight{
+    text-align: center;
+    margin: 30px 0;
+}
