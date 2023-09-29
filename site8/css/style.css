@@ -12,11 +12,6 @@ img{
     width: 900px;
     margin: 0 auto;
 }
-/* @media screen and (max-width: 899px){
-    innerWrap{
-        width: initial;
-    }
-} */
 .silverWrap{
     width: 100vw;
     margin: 0 auto;
@@ -88,10 +83,6 @@ img{
         text-align: center;
     }
 }
-.article__archive{
-    /* リンクを要素の高さいっぱいに広げるため */
-    /* display: flex; */
-}
 .article__archiveLink{
     position: relative;
 }
@@ -113,9 +104,6 @@ img{
     left: 70px;
 }
 
-.article__new{
-    /* display: flex; */
-}
 @media screen and (max-width: 899px){
     .article__new{
         margin-top: 20px;
