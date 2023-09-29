@@ -4,19 +4,29 @@
 img{
     max-width: 100%;
 }
-.body{
-    width: 1200px;
+.maxWidWrap{
+    width: 100vw;
     margin: 0 auto;
 }
 .innerWrap{
     width: 900px;
     margin: 0 auto;
 }
+/* @media screen and (max-width: 899px){
+    innerWrap{
+        width: initial;
+    }
+} */
 .silverWrap{
-    width: 1200px;
+    width: 100vw;
     margin: 0 auto;
     background-color: #dad3d3;
     padding: 100px 0;
+}
+@media screen and (max-width: 899px){
+    .silverWrap{
+        padding: 30px 0;
+    }
 }
 
 
@@ -24,15 +34,16 @@ img{
 ヘッダー
 -------------------------------------------*/
 .header{
-    width: 100%;
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
 }
 .header{
     background-image: url(../img/header_background.jpeg);
-    background-size: 100%;
-    background-position: center top;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 .header{
     position: relative;
@@ -40,7 +51,7 @@ img{
 .header__logo{
     position: absolute;
     top: 30px;
-    left: 1000px;
+    right: 30px;
 }
 
 
@@ -49,6 +60,11 @@ img{
 -------------------------------------------*/
 .article{
     margin-top: 100px;
+}
+@media screen and (max-width: 899px){
+    .article{
+        width: auto;
+    }
 }
 .article__head{
     font-size: 25px;
@@ -65,9 +81,16 @@ img{
     justify-content: space-between;
     margin-top: 20px;
 }
+@media screen and (max-width: 899px){
+    .article__conts{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
 .article__archive{
     /* リンクを要素の高さいっぱいに広げるため */
-    display: flex;
+    /* display: flex; */
 }
 .article__archiveLink{
     position: relative;
@@ -91,7 +114,12 @@ img{
 }
 
 .article__new{
-    display: flex;
+    /* display: flex; */
+}
+@media screen and (max-width: 899px){
+    .article__new{
+        margin-top: 20px;
+    }
 }
 .article__newLink{
     position: relative;
@@ -120,10 +148,12 @@ img{
 .fashion{
     margin-top: 100px;
     margin-bottom: 100px;
-
+}
+.fashion{
+    width: 100vw;
     height: 500px;
     background-image: url(../img/header_background.jpeg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 }
@@ -160,25 +190,47 @@ img{
 セクション ／　catalog
 -------------------------------------------*/
 .catalog{
-    /* margin-top: 100px; */
-}
-.catalog{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+@media screen and (max-width: 899px){
+    .catalog{
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .catalog__imgSide{
     width: 430px;
 }
+@media screen and (max-width: 899px){
+    .catalog__imgSide{
+        width: 100%;
+    }
+}
 .catalog__img{
-    width: 440px;
-    height: 440px;
+    width: 430px;
+    height: 430px;
+}
+@media screen and (max-width: 899px){
+    .catalog__img{
+        width: 90%;
+        height: auto;
+    }
 }
 
 .catalog__txtSide{
     width: 430px;
     margin-left: 40px;
-
+}
+@media screen and (max-width: 899px){
+    .catalog__txtSide{
+        margin-top: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.catalog__txtSide{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,8 +243,18 @@ img{
 .catalog__txt:first-of-type{
     margin-top: 60px;
 }
+@media screen and (max-width: 899px){
+    .catalog__txt:first-of-type{
+        margin-top: 20px;
+    }
+}
 .catalog__txt:not(:first-of-type){
     margin-top: 40px;
+}
+@media screen and (max-width: 899px){
+    .catalog__txt:not(:first-of-type){
+        margin-top: 20px;
+    }
 }
 
 /*-------------------------------------------
@@ -200,22 +262,33 @@ img{
 -------------------------------------------*/
 .antique{
     margin-top: 100px;
-    
+}
+@media screen and (max-width: 899px){
+    .antique{
+        margin-top: initial;
+    }
+}
+.antique{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
-
-.antique__imgSide{
-    width: 430px;
-}
-.antique__img{
-    width: 430px;
-    height: 430px;
+@media screen and (max-width: 899px){
+    .antique{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
 
 .antique__txtSide{
     width: 430px;
-
+}
+@media screen and (max-width: 899px){
+    .antique__txtSide{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.antique__txtSide{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,8 +301,40 @@ img{
 .antique__txt:first-of-type{
     margin-top: 60px;
 }
+@media screen and (max-width: 899px){
+    .antique__txt:first-of-type{
+        margin-top: 20px;
+    }
+}
 .antique__txt:not(:first-of-type){
     margin-top: 40px;
+}
+@media screen and (max-width: 899px){
+    .antique__txt:not(:first-of-type){
+        margin-top: 20px;
+    }
+}
+
+.antique__imgSide{
+    width: 430px;
+    margin-left: 40px;
+}
+@media screen and (max-width: 899px){
+    .antique__imgSide{
+        margin-top: 30px;
+        width: 100%;
+        margin-left: initial;
+    }
+}
+.antique__img{
+    width: 430px;
+    height: 430px;
+}
+@media screen and (max-width: 899px){
+    .antique__img{
+        width: 90%;
+        height: auto;
+    }
 }
 
 /*-------------------------------------------
@@ -245,6 +350,12 @@ img{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+@media screen and (max-width: 899px){
+    .footerWrap{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
 .footerWrap{
     background-color: #3d3a3a;
     color: #fff;
@@ -254,9 +365,26 @@ img{
     width: 300px;
     line-height: 1.5;
 }
+@media screen and (max-width: 899px){
+    .footer__flexItem{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .footer__flexItem:first-of-type{
+        text-align: center;
+    }
+}
+.footer__logo{
+    text-align: center;
+}
 .footer__ttl{
     font-size: 20px;
     font-weight: bold;
+}
+@media screen and (max-width: 899px){
+    .footer__ttl{
+        margin-top: 30px;
+    }
 }
 .footer__txtList{
     margin-top: 20px;
