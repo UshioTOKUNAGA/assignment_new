@@ -1,0 +1,43 @@
+/*-------------------------------------------
+共通
+-------------------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+.header{
+    /* max-width: 1000px; */
+    width: 1000px;
+    border-bottom: solid 1px #c3c3c3;
+    margin: 0 auto;
+    padding: 0 50px 20px 50px;
+}
+.header__logo{
+    margin-top: 40px;
+    text-align: center;
+}
+.header__img{
+    width: 110px;
+    height: auto;
+}
+
+.header__nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu{
+    display: flex;
+}
+.header__menuItem:not(:first-of-type){
+    margin-left: 10px;
+}
+.header__login{
+    display: flex;
+}
+.header__loginItem:not(:first-of-type){
+    margin-left: 10px;
+}
