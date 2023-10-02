@@ -4,15 +4,26 @@
 html {
     font-size: 62.5%;
 }
+.Wrap{
+    max-width: 800px;
+    margin: 0 auto;
+}
+select{
+    /* -webkit-appearance: auto; */
+    /* appearance: auto; */
+    border-width: 1px;
+    -moz-appearance: menulist;
+    -webkit-appearance: menulist;
+}
 
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
 .header{
-    /* max-width: 1000px; */
-    width: 1000px;
+    max-width: 1000px;
     border-bottom: solid 1px #c3c3c3;
     margin: 0 auto;
+    /* text-align: center; */
     padding: 0 50px 20px 50px;
 }
 .header__logo{
@@ -40,4 +51,67 @@ html {
 }
 .header__loginItem:not(:first-of-type){
     margin-left: 10px;
+}
+
+/*-------------------------------------------
+メイン
+-------------------------------------------*/
+.flexBox{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.itemImg{
+    max-width: 380px;
+    height: auto;
+}
+
+.itemInfo{
+    margin-left: 40px;
+    width: 380px;
+}
+.itemTtl{
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-top: solid 1px #c3c3c3;
+    border-bottom: solid 1px #c3c3c3;
+    /* height: 60px;
+    align-items: center; */
+    padding: 30px 0;
+}
+.itemDesc{
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.fee{
+    margin-top: 30px;
+}
+
+.orderTable{
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.orderTable th, .orderTable td{
+    border: solid 1px black;
+}
+.orderTable th:not(:last-child),
+.orderTable td:not(:last-child){
+    text-align: center;
+}
+.orderTableColor, .orderTableSize{
+    width: 20%;
+}
+.orderTableQuantity{
+    width: 60%;
+}
+.order-table.tr.td select{
+    width: 100%;
+    border: solid 1px #c3c3c3;
+    padding: 0 10px;
+}
+.cartBtn{
+    width: 100%;
+    background-color: #4B4B4B;
+    color: #fff;
 }

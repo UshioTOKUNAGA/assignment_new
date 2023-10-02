@@ -9,6 +9,8 @@ img{
     margin: 0 auto;
 }
 .innerWrap{
+    /* maxとwidthを併用する */
+    max-width: 900px;
     width: 900px;
     margin: 0 auto;
 }
@@ -34,7 +36,7 @@ img{
     margin: 0 auto;
 }
 .header{
-    background-image: url(../img/header_background.jpeg);
+    background-image: url(/site8//img/header_background.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,15 +89,17 @@ img{
     position: relative;
 }
 .article__archiveImg{
-    width: 440px;
-    height: 440px;
+    margin: 0 20px;
+    width: 400px;
+    height: 400px;
 }
 .article__archiveHead{
     font-size: 22px;
 }
 .article__archiveTxts{
-    background-color: #605f5f;
+    background-color: rgba(0, 0, 0, .5);
     color: #fff;
+    text-align: center;
 }
 .article__archiveTxts{
     width: 300px;
@@ -113,15 +117,17 @@ img{
     position: relative;
 }
 .article__newImg{
-    width: 440px;
-    height: 440px;
+    margin: 0 20px;
+    width: 400px;
+    height: 400px;
 }
 .article__newHead{
     font-size: 22px;
 }
 .article__newTxts{
-    background-color: #605f5f;
+    background-color: rgba(0, 0, 0, .5);
     color: #fff;
+    text-align: center;
 }
 .article__newTxts{
     width: 300px;
@@ -134,8 +140,7 @@ img{
 セクション ／　fashion
 -------------------------------------------*/
 .fashion{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px 0;
 }
 .fashion{
     width: 100vw;
@@ -199,6 +204,9 @@ img{
 .catalog__img{
     width: 430px;
     height: 430px;
+    /* order: 1; */
+    /* :nth-of-type(odd) 奇数
+    :nth-of-type(even) 偶数 */
 }
 @media screen and (max-width: 899px){
     .catalog__img{
@@ -213,7 +221,7 @@ img{
 }
 @media screen and (max-width: 899px){
     .catalog__txtSide{
-        margin-top: 20px;
+        /* margin-top: 40px; */
         width: 90%;
         margin: 0 auto;
     }
@@ -227,6 +235,11 @@ img{
 .catalog__head{
     font-size: 22px;
     font-weight: bold;
+}
+@media screen and (max-width: 899px){
+    .catalog__head{
+        margin-top: 20px;
+    }
 }
 .catalog__txt:first-of-type{
     margin-top: 60px;
@@ -309,7 +322,7 @@ img{
 }
 @media screen and (max-width: 899px){
     .antique__imgSide{
-        margin-top: 30px;
+        margin-top: 100px;
         width: 100%;
         margin-left: initial;
     }
@@ -331,7 +344,7 @@ img{
 .footer{
     margin-top: 100px;
 }
-.footerWrap{
+.footer__Wrap{
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -340,8 +353,9 @@ img{
 }
 @media screen and (max-width: 899px){
     .footerWrap{
-        flex-direction: column;
-        margin: 0 auto;
+        display: block;
+        /* flex-direction: column;
+        margin: 0 auto; */
     }
 }
 .footerWrap{
